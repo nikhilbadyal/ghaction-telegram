@@ -53,19 +53,15 @@ export async function downloadReleaseAsset(
   chatId: number
 ): Promise<string> {
   try {
-    const downloadAsset = await octokit.rest.repos
-      .getReleaseAsset({
-        ...context.repo,
-        asset_id: asset.id,
-        request: {
-          headers: {
-            Accept: 'application/octet-stream'
-          }
+    const downloadAsset = await octokit.rest.repos.getReleaseAsset({
+      ...context.repo,
+      asset_id: asset.id,
+      request: {
+        headers: {
+          Accept: 'application/octet-stream'
         }
-      })
-      .on(data => {
-        console.log('Some shit')
-      })
+      }
+    })
     debug(downloadAsset)
     writeFileSync(downloadPath, Buffer.from(downloadAsset.data), 'binary')
     debug(`Downloaded ${asset.name}`)
