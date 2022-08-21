@@ -62,11 +62,6 @@ export async function downloadReleaseAsset(
         }
       }
     })
-    debug(
-      downloadAsset.on(data => {
-        debug('Oh shit')
-      })
-    )
     writeFileSync(downloadPath, Buffer.from(downloadAsset.data), 'binary')
     debug(`Downloaded ${asset.name}`)
     await uploadReleaseAsset(telegram, chatId, downloadPath)
