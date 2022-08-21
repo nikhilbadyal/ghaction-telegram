@@ -75,4 +75,6 @@ async function run(): Promise<void> {
     }
   }
 }
+// eslint-disable-next-line capitalized-comments
+// noinspection JSIgnoredPromiseFromCall
 run()
