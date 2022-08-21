@@ -1,8 +1,7 @@
 import type { Api } from 'telegram'
-import { Logger, TelegramClient } from 'telegram'
+import { TelegramClient } from 'telegram'
 import { StringSession } from 'telegram/sessions'
 import { debug } from '@actions/core'
-import { LogLevel } from 'telegram/extensions/Logger'
 
 let stringSession
 
@@ -14,7 +13,7 @@ export class Telegram {
       new StringSession(stringSession),
       apiId,
       apiHash,
-      { baseLogger: new Logger(LogLevel.DEBUG), connectionRetries: 5 }
+      { connectionRetries: 5 }
     )
   }
 
