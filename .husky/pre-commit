@@ -3,3 +3,4 @@
 
 yarn run prettier
 yarn run lint
+yarn build
