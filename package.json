@@ -1,0 +1,41 @@
+{
+  "name": "ghaction-telegram",
+  "version": "0.0.1",
+  "description": "A GitHub action to interact with telegram.",
+  "main": "lib/main.js",
+  "repository": "https://github.com/nikhilbadyal/ghaction-telegram",
+  "author": "nikhilbadyal",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build src/main.ts --source-map -d --minify --license licenses.txt",
+    "lint": "eslint src/**/*.ts",
+    "lint-fix": "eslint --fix src/**/*.ts",
+    "prettier-fix": "prettier --write '**/*.ts'",
+    "prettier": "prettier --check '**/*.ts'",
+    "all": "yarn prettier-fix && yarn prettier && yarn lint-fix && yarn lint && yarn run build",
+    "husky": "husky install",
+    "local": "npx tsx src/main.ts"
+  },
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3",
+    "telegram": "^2.10.10"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.8",
+    "eslint": "^8.22.0",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint-plugin-github": "^4.3.7",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "@vercel/ncc": "^0.34.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "ts-node": "^10.9.1",
+    "husky": "^8.0.0"
+  }
+}

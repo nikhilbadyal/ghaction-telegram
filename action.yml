@@ -1,0 +1,23 @@
+name: 'Telegram GitHub Action'
+description: 'A GitHub action to interact with telegram'
+author: 'nikhilbadyal'
+inputs:
+  github_token:
+    required: true
+    description: 'Github token'
+  telegram_api_id:
+    required: true
+    description: 'Telegram API ID'
+  telegram_api_hash:
+    required: true
+    description: 'Telegram API HASH'
+  telegram_bot_token:
+    required: true
+    description: 'Bot Token (Sender)'
+  telegram_chat_id:
+    required: true
+    description: 'Chat ID (Receiver)'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
