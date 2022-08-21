@@ -53,6 +53,8 @@ export async function downloadReleaseAsset(
   chatId: number
 ): Promise<string> {
   try {
+    let dateTime = new Date()
+    debug(dateTime.toUTCString())
     const downloadAsset = await octokit.rest.repos.getReleaseAsset({
       ...context.repo,
       asset_id: asset.id,
@@ -62,7 +64,11 @@ export async function downloadReleaseAsset(
         }
       }
     })
+    dateTime = new Date()
+    debug(dateTime.toUTCString())
     writeFileSync(downloadPath, Buffer.from(downloadAsset.data), 'binary')
+    dateTime = new Date()
+    debug(dateTime.toUTCString())
     debug(`Downloaded ${asset.name}`)
     await uploadReleaseAsset(telegram, chatId, downloadPath)
     debug(`Uploaded ${asset.name} to telegram`)
