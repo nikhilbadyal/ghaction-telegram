@@ -72,6 +72,8 @@ export async function downloadReleaseAsset(
     debug(`Downloaded ${asset.name}`)
     await uploadReleaseAsset(telegram, chatId, downloadPath)
     debug(`Uploaded ${asset.name} to telegram`)
+    dateTime = new Date()
+    debug(dateTime.toUTCString())
     return downloadPath
   } catch (error) {
     throw new Error(
