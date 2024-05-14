@@ -22,7 +22,7 @@
     "telegram": "^2.10.10"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
+    "@types/node": "^20.12.12",
     "eslint": "^8.57.0",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.48.1",
