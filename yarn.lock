@@ -2789,10 +2789,10 @@ synckit@^0.9.1:
     "@pkgr/core" "^0.1.0"
     tslib "^2.6.2"
 
-telegram@^2.22.2:
-  version "2.22.2"
-  resolved "https://registry.yarnpkg.com/telegram/-/telegram-2.22.2.tgz#5e252135fb9b0085fb84b049c0983908b6837473"
-  integrity sha512-9payizc801Aqqu4eTGPc0huxKnIwFe0hn18mrpbgAKKiMLurX/UIQW/fjPhI5ONzockDFsaXDFqTreXBoG1u3A==
+telegram@^2.26.8:
+  version "2.26.8"
+  resolved "https://registry.yarnpkg.com/telegram/-/telegram-2.26.8.tgz#b3a9bec0108ca8bd4a30b40be88284c54e5ba42d"
+  integrity sha512-5sIb43Fd7HxjXQZqKWMhNTmdMOlG3QkuhR2xPleUA5B8BxOZl9IwrDwFdiC7aezGVTcD6oJ1d4cloUySjmCX/A==
   dependencies:
     "@cryptography/aes" "^0.1.1"
     async-mutex "^0.3.0"
