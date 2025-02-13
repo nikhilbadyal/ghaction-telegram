@@ -19,7 +19,7 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
-    "telegram": "^2.26.8"
+    "telegram": "^2.26.22"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
