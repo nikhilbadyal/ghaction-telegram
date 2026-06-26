@@ -29,7 +29,7 @@
     "eslint-plugin-github": "^6.0.0",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-unicorn": "^67.0.0",
+    "eslint-plugin-unicorn": "^68.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "@vercel/ncc": "^0.44.0",
