@@ -1436,10 +1436,10 @@ eslint-plugin-sort-keys-fix@^1.1.2:
     natural-compare "^1.4.0"
     requireindex "~1.2.0"
 
-eslint-plugin-unicorn@^67.0.0:
-  version "67.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-67.0.0.tgz#70f7f840d2f3f1e07136bbc1d49ae2232f41d659"
-  integrity sha512-XEYhNfAFFFYQLq++53iqpgIPFqvjasf5lsUJuCdmd/QvbRfcLbmPTjcTyVEXc5yBudWIg08SSEGgqJtEojk1ug==
+eslint-plugin-unicorn@^68.0.0:
+  version "68.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-68.0.0.tgz#2d9f9a3035609a65a17ee227ac414b23a631e14e"
+  integrity sha512-mHYWvX948Q4H3bGc39bsNMxD/leOuNI+Iws9NVsoSz5VA7EGP86wnz7mZ/SPSvRhefT8L4hd8DHfDuGC+lIoCQ==
   dependencies:
     "@babel/helper-validator-identifier" "^7.29.7"
     "@eslint-community/eslint-utils" "^4.9.1"
